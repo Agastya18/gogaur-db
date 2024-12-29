@@ -27,7 +27,7 @@ func main() {
 	defer database.Close()
     PORT := os.Getenv("PORT")
 	if PORT == "" {
-        PORT = "8000" // Default port
+        PORT = "1000" // Default port
     }
 	r := gin.Default()
 
