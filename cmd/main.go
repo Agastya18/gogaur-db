@@ -2,8 +2,11 @@ package main
 
 import (
 	"net/http"
+	"os"
+	"log"
 
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 	"saaster.tech/own-db/db"
 )
 
@@ -11,6 +14,10 @@ var database *db.SimpleDB
 
 func main() {
 	// Initialize the database
+	er := godotenv.Load()
+	if er != nil {
+		log.Fatal("Error loading env")
+	}
 	var err error
 	database, err = db.OpenDB("mydb.data")
 	
@@ -18,14 +25,14 @@ func main() {
 		panic("Failed to open database: " + err.Error())
 	}
 	defer database.Close()
-
+    PORT := os.Getenv("PORT")
 	r := gin.Default()
 
 	r.POST("/set", handleSet)
 	r.GET("/get", handleGet)
 	r.DELETE("/delete", handleDelete)
 
-	r.Run(":8080")
+	r.Run(":" + PORT)
 }
 
 func handleSet(c *gin.Context) {
