@@ -119,8 +119,8 @@ func (db *SimpleDB) Delete(key string) error {
 		return errors.New("key not found")
 	}
 
-	delete(db.data, key)
-	return nil
+ 	delete(db.data, key)
+	return  nil
 }
 
 // Close ensures the file is properly closed
