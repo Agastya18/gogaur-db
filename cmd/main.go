@@ -27,7 +27,7 @@ func main() {
 	defer database.Close()
     PORT := os.Getenv("PORT")
 	if PORT == "" {
-        PORT = "1000" // Default port
+        PORT = "8080" // Default port
     }
 	r := gin.Default()
 
@@ -35,7 +35,7 @@ func main() {
 	r.GET("/get", handleGet)
 	r.DELETE("/delete", handleDelete)
 
-	if err := r.Run("0.0.0.0:" + PORT); err != nil {
+	if err := r.Run(":" + PORT); err != nil {
         log.Fatalf("Failed to start server: %v", err)
     }
 }
