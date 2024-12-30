@@ -2,6 +2,12 @@
 
 A lightweight, file-based key-value database implementation in Go with REST API support.
 
+
+
+https://github.com/user-attachments/assets/d8981509-0110-45e8-bc98-2d9b3da932c0
+
+
+
 ## Features
 
 - Persistent storage using file system
