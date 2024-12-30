@@ -18,6 +18,9 @@ https://github.com/user-attachments/assets/d8981509-0110-45e8-bc98-2d9b3da932c0
 - JSON-based data storage
 - Frontend SDK support via @agastyagaur/gogaur-sdk (built by me)
 
+### [`gogaur-sdk` (Go)](https://www.npmjs.com/package/@agastyagaur/gogaur-sdk)
+
+
 ## Prerequisites
 
 - Go 1.16 or higher
@@ -74,6 +77,7 @@ go run cmd/main.go
 2. The server will start on the configured port (default: 8080)
 
 ### Usage with React
+
 
 ```javascript
 
