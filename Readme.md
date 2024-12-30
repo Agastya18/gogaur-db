@@ -70,6 +70,9 @@ go run cmd/main.go
 ### Usage with React
 
 ```javascript
+
+npm i @agastyagaur/gogaur-sdk
+
 import { GogaurDB } from '@agastyagaur/gogaur-sdk';
 
 // Initialize the client
