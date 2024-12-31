@@ -130,3 +130,5 @@ func (db *SimpleDB) Close() error {
 
 	return db.file.Close()
 }
+
+// hope u like it
