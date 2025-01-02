@@ -121,9 +121,7 @@ The API returns appropriate HTTP status codes:
 - In-memory index needs to be rebuilt on startup
 - Basic error handling
 
-## Contributing
 
-Feel free to submit issues, fork the repository, and create pull requests for any improvements.
 
 ## License
 
