@@ -1,4 +1,4 @@
-# Simple Key-Value Database
+# Simple Key-Value Database (GoGaur)
 
 A lightweight, file-based key-value database implementation in Go with REST API support.
 
